@@ -1,0 +1,34 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Talk	scrapers/__init__.py	/^class Talk:$/;"	c
+__init__	scrapers/__init__.py	/^    def __init__($/;"	m	class:Talk
+__str__	scrapers/__init__.py	/^    def __str__(self):$/;"	m	class:Talk	file:
+and	first_scrapes/talks_mathtube.p	/^Chandgotia”Œabstract”Xá/;"	f
+and	first_scrapes/talks_mathtube.p	/^Kamgarpour”Œabstract”X«/;"	f
+and	talks_mathtube.p	/^Chandgotia”Œabstract”Xá/;"	f
+and	talks_mathtube.p	/^Kamgarpour”Œabstract”X«/;"	f
+cleanSpeaker	scrapers/__init__.py	/^def cleanSpeaker(speaker):$/;"	f
+dateParse	scrapers/__init__.py	/^def dateParse(date):$/;"	f
+fields	first_scrapes/talks_birs.p	/^”ub.€•|/;"	f
+fields	talks_birs.p	/^”ub.€•|/;"	f
+for	first_scrapes/talks_birs.p	/^”ub.€•Œ/;"	p
+for	talks_birs.p	/^”ub.€•Œ/;"	p
+getTalk	scrapers/fields.py	/^def getTalk(driver):$/;"	f
+one	first_scrapes/talks_mathtube.p	/^reconstruct this function one must use auxiliary information to determine$/;"	f
+one	talks_mathtube.p	/^reconstruct this function one must use auxiliary information to determine$/;"	f
+outFile	main.py	/^outFile = open("talks_fields.p", "wb")$/;"	v
+overlap	first_scrapes/talks_birs.p	/^”ub.€•S/;"	f
+overlap	talks_birs.p	/^”ub.€•S/;"	f
+provides	first_scrapes/talks_mathtube.p	/^Climenhaga”Œabstract”Xy/;"	f
+provides	talks_mathtube.p	/^Climenhaga”Œabstract”Xy/;"	f
+removeParentheses	scrapers/__init__.py	/^def removeParentheses(text):$/;"	f
+scrape	scrapers/birs.py	/^def scrape(start_date=date(1980, 1, 1)):$/;"	f
+scrape	scrapers/fields.py	/^def scrape(start_date=date(1980, 1, 1)):$/;"	f
+scrape	scrapers/mathtube.py	/^def scrape(start_date=date(1980, 1, 1)):$/;"	f
+to	first_scrapes/talks_birs.p	/^”ub.€•]/;"	p
+to	talks_birs.p	/^”ub.€•]/;"	p
+urlToTalk	scrapers/mathtube.py	/^def urlToTalk(url):$/;"	f
