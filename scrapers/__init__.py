@@ -64,7 +64,7 @@ def cleanSpeaker(speaker):
     if word_num == 0:
         return (None, None)
     elif word_num == 1:
-        return (None, words[0])
+        return (None, words[0].capitalize())
     else:
         return (" ".join(words[0:-1]), words[word_num - 1].capitalize())
 

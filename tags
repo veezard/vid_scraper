@@ -4,45 +4,150 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+F	talks_ias.p	/^	Opening Remarks, Nathan Seiberg, Professor in the School of Natural Sciences, Institute for Advanced Study”Œworkshop”Nub.€•/;"	f
+Fields	scraped_backup_02_01/talks_birs.p	/^Pourahmadi”Œabstract”NŒworkshop”ŒBirs- 14w5157: Recent Advances and Trends in Time Series Analysis: Nonlinear Time Series, High Dimensional Inference and Beyond”ub.€•/;"	f
+Fields	scraped_backup_02_01/talks_msri.p	/^Hrushovski”Œabstract”NŒworkshop”Nub.€•ò/;"	f
 Fields	talks_birs.p	/^Pourahmadi”Œabstract”NŒworkshop”ŒBirs- 14w5157: Recent Advances and Trends in Time Series Analysis: Nonlinear Time Series, High Dimensional Inference and Beyond”ub.€•/;"	f
+Fields	talks_msri.p	/^Hrushovski”Œabstract”NŒworkshop”Nub.€•ò/;"	f
+Forms	scraped_backup_02_01/talks_fields.p	/^Parnaudeau”Œabstract”NŒworkshop”ŒWFields- Workshop on Computation of Quantum Systems in Cold-matter Physics and Chemistry”ub.€•*/;"	f
 Forms	talks_fields.p	/^Parnaudeau”Œabstract”NŒworkshop”ŒWFields- Workshop on Computation of Quantum Systems in Cold-matter Physics and Chemistry”ub.€•*/;"	f
+In	talks_ias.p	/^http:\/\/www.ias.edu\/sns\/~seminar\/colloquia.shtml”Œworkshop”Nub.€•Ä/;"	f
 Talk	scrapers/__init__.py	/^class Talk:$/;"	c
+Theorems	scraped_backup_02_01/talks_birs.p	/^Daniilidis”Œabstract”NŒworkshop”ŒMBirs- 17w5030: Splitting Algorithms, Modern Operator Theory, and Applications”ub.€•T/;"	f
 Theorems	talks_birs.p	/^Daniilidis”Œabstract”NŒworkshop”ŒMBirs- 17w5030: Splitting Algorithms, Modern Operator Theory, and Applications”ub.€•T/;"	f
+Weierstrass	scraped_backup_02_01/talks_msri.p	/^The presence of an automorphism of order p leads to significant constraints on arithmetic invariants of the Jacobian.  I will also discuss results about deformations of wildly ramified covers of curves in positive characteristic.”Œworkshop”ŒiMSRI- Connections for Women: Model Theory and Its Interactions with Number Theory and Arithmetic Geometry”ub.€•/;"	f
+Weierstrass	talks_msri.p	/^The presence of an automorphism of order p leads to significant constraints on arithmetic invariants of the Jacobian.  I will also discuss results about deformations of wildly ramified covers of curves in positive characteristic.”Œworkshop”ŒiMSRI- Connections for Women: Model Theory and Its Interactions with Number Theory and Arithmetic Geometry”ub.€•/;"	f
 __init__	scrapers/__init__.py	/^    def __init__($/;"	m	class:Talk
 __str__	scrapers/__init__.py	/^    def __str__(self):$/;"	m	class:Talk	file:
-and	first_scrapes/talks_mathtube.p	/^Chandgotia”Œabstract”Xá/;"	f
-and	first_scrapes/talks_mathtube.p	/^Kamgarpour”Œabstract”X«/;"	f
+and	scraped_backup_02_01/talks_birs.p	/^Koditschek”Œabstract”NŒworkshop”ŒBBirs- 20w5194: Topological Complexity and Motion Planning (Online)”ub.€•W/;"	f
+and	scraped_backup_02_01/talks_mathtube.p	/^Chandgotia”Œabstract”Xá/;"	f
 and	talks_birs.p	/^Koditschek”Œabstract”NŒworkshop”ŒBBirs- 20w5194: Topological Complexity and Motion Planning (Online)”ub.€•W/;"	f
+and	talks_ias.p	/^While methods for training EBMs at scale have improved drastically, they still lag behind other classes of generative models such as flows and GANs. Further, there has been little work on evaluating unnormalized models and comparing them with other model classes. My next work addresses these issues with the Stein Discrepancy (SD). The SD is a measure of distance between two distributions that is defined using samples from one distribution and an unnormalized model for the other. I explore how the stein discrepancy can be estimated in practice at scale and demonstrate applications related to goodness-of-fit testing and unnormalized model evaluation. Next, I show how my approach for SD estimation can be turned into a GAN-like training objective for EBMs which scales to high-dimensional data more gracefully than previous approaches.”Œworkshop”Nub.€•P/;"	f
 and	talks_mathtube.p	/^Chandgotia”Œabstract”Xá/;"	f
+applied	talks_ias.p	/^ In the second part of the talk, I will give a new proof of hardness  amplification for weakly verifiable puzzles, which is more general than  previous ones in that it gives the right bounds for arbitrary monotone  function applied to the checking circuit of the underlying puzzle. $/;"	f
+approach	scraped_backup_02_01/talks_msri.p	/^Convergence rates for the algorithms are established using a Lyapunov function approach which unifies the continuous time, deterministic gradient, and stochastic gradient cases. The stochastic algorithms are accelerated (in the convex case, and stochastic approximation setting), in the sense that the rate constant improves over existing results. Existing results have a rate constant which depends on G^2, the bound on the norm of the stochastic gradient. The accelerated algorithm rate constant depends on the smaller constant depends on \\sigma^2, the variance of the stochastic gradient.$/;"	f
+approach	talks_msri.p	/^Convergence rates for the algorithms are established using a Lyapunov function approach which unifies the continuous time, deterministic gradient, and stochastic gradient cases. The stochastic algorithms are accelerated (in the convex case, and stochastic approximation setting), in the sense that the rate constant improves over existing results. Existing results have a rate constant which depends on G^2, the bound on the norm of the stochastic gradient. The accelerated algorithm rate constant depends on the smaller constant depends on \\sigma^2, the variance of the stochastic gradient.$/;"	f
+associated	talks_ias.p	/^This is joint work with Lorenzo Orecchia, Aaron Sidford, and Yin Tat Lee.”Œworkshop”Nub.€•€/;"	f
+at	scraped_backup_02_01/talks_mathtube.p	/^This is the second lecture in a two part series: part 1”Œworkshop”Œ)Mathtube- Workshop on Arithmetic Topology”ub.€•»/;"	f
 at	talks_mathtube.p	/^This is the second lecture in a two part series: part 1”Œworkshop”Œ)Mathtube- Workshop on Arithmetic Topology”ub.€•»/;"	f
+boundary	talks_ias.p	/^References: Area rule for circulation and minimal surfaces in three-dimensional turbulence, Kartik P. Iyer, Sachin S. Bharadwaj, Katepalli R. Sreenivasan, arXiv:2007.06723; Scaling exponents saturate in three-dimensional isotropic turbulence, K. P. Iyer, K. Sreenivasan, P. K. Yeung, Phys. Rev. Fluids.5.054605; V. Yakhot, preprint”Œworkshop”Nub.€•/;"	f
 cleanSpeaker	scrapers/__init__.py	/^def cleanSpeaker(speaker):$/;"	f
 cutStringUntilSequence	scrapers/msri.py	/^def cutStringUntilSequence(string, sequences):$/;"	f
 dateParse	scrapers/__init__.py	/^def dateParse(date):$/;"	f
-fields	first_scrapes/talks_birs.p	/^”ub.€•|/;"	f
-for	first_scrapes/talks_birs.p	/^”ub.€•Œ/;"	p
+field	talks_ias.p	/^In the 1740s, Japanese Confucians discovered a long lost sub-commentary of Confucius's Analects. After publication in 1750, an imprint was also sent to China, where it had disappeared circa 1200â€“1250. The commentary provided important information about medieval Chinese classical learning. Its preface recommended a medieval approach to the study of texts, which was surprisingly compatible with the contemporary research movement known as â€œevidential studiesâ€ in both China and Japan. In this talk, Elman will discuss whether this precocious philological insight was more than just adventitious. This lecture is made possible by the Dr. S.T. Lee Fund for Historical Studies and is free and open to the public.”Œworkshop”Nub.€•/;"	f
+field	talks_ias.p	/^No special background beyond standard linear algebra will be assumed.”Œworkshop”Nub.€•/;"	f
+fields	scraped_backup_02_01/talks_msri.p	/^We introduce a notion of a approximate cohomology groups and interpret this result as a computation of H^1 in a special case. Our proof uses the inverse theorem for the Gowers norms over finite fields; and an independent proof of this result (and some natural generalizations of it) would lead to a new proof of the inverse theorem. Joint work with D. Kazhdan”Œworkshop”Œ3MSRI- Recent developments in Analytic Number Theory”ub.€•ÿ/;"	f
+fields	talks_ias.p	/^http:\/\/www.ias.edu\/sns\/~seminar\/colloquia.shtml”Œworkshop”Nub.€•	/;"	f
+fields	talks_msri.p	/^We introduce a notion of a approximate cohomology groups and interpret this result as a computation of H^1 in a special case. Our proof uses the inverse theorem for the Gowers norms over finite fields; and an independent proof of this result (and some natural generalizations of it) would lead to a new proof of the inverse theorem. Joint work with D. Kazhdan”Œworkshop”Œ3MSRI- Recent developments in Analytic Number Theory”ub.€•ÿ/;"	f
+for	scraped_backup_02_01/talks_birs.p	/^Dumitrescu”Œabstract”NŒworkshop”ŒDBirs- 18w5084: Moduli Spaces: Birational Geometry and Wall Crossings”ub.€•\//;"	f
+for	scraped_backup_02_01/talks_birs.p	/^Wickelgren”Œabstract”NŒworkshop”Œ+Birs- 17w5112: Nilpotent Fundamental Groups”ub.€•\//;"	f
+for	scraped_backup_02_01/talks_fields.p	/^/;"	f
+for	scraped_backup_02_01/talks_mathtube.p	/^A case study illustrates the importance of including inhibition on the regions of stability. Implications for optimizing biogas production are then explored. In particular, which control parameters and changes in initial conditions the model predicts can move the system to, or from, the optimal state are then considered. An even more simplified model proposed in Bornh\\â€{o}ft, Hanke-Rauschenback, and Sundmacher [Nonlinear Dynamics 73, 535-549 (2013)], claimed to capture most of the qualitative dynamics of the process is then analyzed. The proof requires considering growth in the chemostat in the case of a general class of response functions including non-monotone functions when the species death rate is included.”Œworkshop”Œ.Mathtube- PIMS-UManitoba Distinguished Lecture”ub.€•#/;"	f
+for	scraped_backup_02_01/talks_simons.p	/^Verstraete”Œabstract”NŒworkshop”Œ1Simons- Workshop: Wonders of Broken Integrability”ub.€•¤/;"	p
 for	talks_birs.p	/^Dumitrescu”Œabstract”NŒworkshop”ŒDBirs- 18w5084: Moduli Spaces: Birational Geometry and Wall Crossings”ub.€•\//;"	f
 for	talks_birs.p	/^Wickelgren”Œabstract”NŒworkshop”Œ+Birs- 17w5112: Nilpotent Fundamental Groups”ub.€•\//;"	f
 for	talks_fields.p	/^/;"	f
+for	talks_ias.p	/^We will follow a running example involving modules over the group algebra A of the group of size 2, that is A=Z[x]\/(x2âˆ’1). If you know what a short exact sequence of A-modules is, you should have all the needed prerequisites for this talk. It also helps to know what a complex of A-modules is, and a homotopy equivalence of such complexes. (If you know about coherent sheaves on projective space, then you'll have a lot of fun ignoring my lecture and thinking about how to diagonalize O(1); this is one topic in a beautiful paper by Gorsky-Negut-Rasmussen.)”Œworkshop”Nub.€•ï/;"	p
 for	talks_mathtube.p	/^A case study illustrates the importance of including inhibition on the regions of stability. Implications for optimizing biogas production are then explored. In particular, which control parameters and changes in initial conditions the model predicts can move the system to, or from, the optimal state are then considered. An even more simplified model proposed in Bornh\\â€{o}ft, Hanke-Rauschenback, and Sundmacher [Nonlinear Dynamics 73, 535-549 (2013)], claimed to capture most of the qualitative dynamics of the process is then analyzed. The proof requires considering growth in the chemostat in the case of a general class of response functions including non-monotone functions when the species death rate is included.”Œworkshop”Œ.Mathtube- PIMS-UManitoba Distinguished Lecture”ub.€•#/;"	f
+for	talks_simons.p	/^Verstraete”Œabstract”NŒworkshop”Œ1Simons- Workshop: Wonders of Broken Integrability”ub.€•¤/;"	p
 fullName	scrapers/__init__.py	/^    def fullName(self):$/;"	m	class:Talk
 getTalk	scrapers/fields.py	/^def getTalk(driver):$/;"	f
+has	talks_ias.p	/^	This talk was given for the Friends of the Institute for Advanced Study. To learn more about the Friends, please visit www.ias.edu\/people\/friends.”Œworkshop”Nub.€•6/;"	f
+in	scraped_backup_02_01/talks_msri.p	/^Iliopoulou”Œabstract”NŒworkshop”ŒMSRI- Academic Sponsors Day”ub.€•ù/;"	f
+in	scraped_backup_02_01/talks_simons.p	/^/;"	f
+in	scraped_backup_02_01/talks_simons.p	/^Dumitrescu”Œabstract”Xo/;"	f
+in	talks_ias.p	/^Horng-Tzer”ŒlastName”ŒYau”Œabstract”X/;"	f
+in	talks_ias.p	/^http:\/\/www.ias.edu\/sns\/~seminar\/colloquia.shtml”Œworkshop”Nub.€•/;"	f
+in	talks_msri.p	/^Iliopoulou”Œabstract”NŒworkshop”ŒMSRI- Academic Sponsors Day”ub.€•ù/;"	f
+in	talks_simons.p	/^/;"	f
 in	talks_simons.p	/^Dumitrescu”Œabstract”Xo/;"	f
+is	scraped_backup_02_01/talks_msri.p	/^Diaz-lopez”Œabstract”X/;"	f
+is	scraped_backup_02_01/talks_msri.p	/^Its goal is to prove the equality of curve counts in dual geometries, whenever both counts can be defined using present-day technology.”Œworkshop”Œ)MSRI-  Structures in Enumerative Geometry”ub.€•/;"	f
+is	scraped_backup_02_01/talks_simons.p	/^in a  partially-occupied Landau level with periodic boundary conditions.”Œ	firstName”ŒF. Duncan M.”ŒlastName”ŒHaldane”Œabstract”X/;"	f
+is	talks_ias.p	/^I did not manage to solve this problem, but I did get the result that at most 4 points of any Jordan loop are vertices of inscribed  rectangles. I will sketch a proof of this result, mostly through visual demos, and also I will explain two other theorems about inscribed rectangles which at least bear a resemblance to theorems in symplectic geometry.”Œworkshop”Nub.€•Ç/;"	f
+is	talks_ias.p	/^This is joint work with Vlad Vicol and Nathan Glatt-Holtz.”Œworkshop”Nub.€•/;"	f
+is	talks_msri.p	/^Diaz-lopez”Œabstract”X/;"	f
+is	talks_msri.p	/^Its goal is to prove the equality of curve counts in dual geometries, whenever both counts can be defined using present-day technology.”Œworkshop”Œ)MSRI-  Structures in Enumerative Geometry”ub.€•/;"	f
+is	talks_simons.p	/^in a  partially-occupied Landau level with periodic boundary conditions.”Œ	firstName”ŒF. Duncan M.”ŒlastName”ŒHaldane”Œabstract”X/;"	f
+led	talks_ias.p	/^However, our computational hardness argument currently depends on two unproved conjectures, both concerning the permanent of an n-by-n matrix X of independent N(0,1) complex Gaussians. The first conjecture says that that Pr[ |Per(X)| < sqrt(n!)\/poly(n) ] is upper-bounded by 1\/poly(n) , while the second conjecture says that approximating Per(X) , for most Gaussian matrices X , is a #P-complete problem. Both conjectures seem interesting even independently of our application. In this talk, I'll tell you about these conjectures, and the progress we were able to make toward proving them. Specifically, I'll show that our conjectured anti-concentration bound holds with the determinant in place of the permanent. If time permits, I'll also show that a weaker anti-concentration bound holds for the permanent; that *exactly* computing Per(X) with high probability for a Gaussian matrix X is #P-hard; and that extending this #P-hardness to the approximate case will require going outside the LFKN\/Lipton polynomial interpolation paradigm.”Œworkshop”Nub.€•É/;"	f
+near	talks_ias.p	/^Physics and mathematics seem to be in a pre-established harmony, as Gottfried Leibniz observed long ago. New ideas generated by mathematical researchers have often proved to be essential to physicists trying to discover the most basic laws of nature. Likewise, physicists have often generated new insights into advanced mathematics. This event explores the astonishingly productive relationship between physics and mathematics and explores whether these disciplines might one day unify, perhaps leading to a giant structure that encompasses all the laws that describe the underlying workings of the universe.”Œworkshop”Nub.€•â/;"	p
+nonorthogonality	scraped_backup_02_01/talks_simons.p	/^Siu-Cheong”ŒlastName”ŒLau”Œabstract”XŸ/;"	f
+nonorthogonality	talks_simons.p	/^Siu-Cheong”ŒlastName”ŒLau”Œabstract”XŸ/;"	f
+of	scraped_backup_02_01/talks_fields.p	/^/;"	f
+of	scraped_backup_02_01/talks_msri.p	/^Chatterjee”Œabstract”XT/;"	f
+of	scraped_backup_02_01/talks_msri.p	/^Grigorchuk”Œabstract”XP/;"	f
+of	scraped_backup_02_01/talks_msri.p	/^and the L-function of E does not vanish at s = 1, then E has only$/;"	f
+of	scraped_backup_02_01/talks_simons.p	/^A review and Open questions”Œ	firstName”ŒJacob”ŒlastName”ŒSonnenschein”Œabstract”ŒVThe HISH model has been quite successful in accounting for the spectra and decay width”Œworkshop”ŒbSimons- Summer seminar series: Applications of gauge topology, holography and string models to QCD”ub.€•¹/;"	f
+of	scraped_backup_02_01/talks_simons.p	/^Alessandro”ŒlastName”Œ	Sfondrini”Œabstract”NŒworkshop”ŒNSimons- Workshop: TT and Other Solvable Deformations of Quantum Field Theories”ub.€•4/;"	f
+of	scraped_backup_02_01/talks_simons.p	/^Alessandro”ŒlastName”Œ	Sfondrini”Œabstract”XB/;"	f
+of	scraped_backup_02_01/talks_simons.p	/^Nepomechie”Œabstract”XÔ/;"	f
 of	talks_fields.p	/^/;"	f
+of	talks_ias.p	/^	In this talk we derive an estimator for the covariance matrix as a solution to a certain linear system. While we prove that the resulting estimator for the covariance matrix is consistent in the classical limit as the number of projection images grow indefinitely, an interesting open question regarding the sample complexity of the problem remains. Namely, how many images are required in order to resolve heterogeneous structures as a function of the volume size and the signal to noise ratio? We will see that solving this question requires us to extend the analysis of principal component analysis (PCA) in high dimensions, as we encounter limiting distributions that differ from the classical Marcenko-Pastur distribution.$/;"	f
+of	talks_ias.p	/^(4) the Hankel transform for the standard L-function of $GL(n)$ on the Kuznetsov formula (contained in a paper of Jacquet);$/;"	f
+of	talks_ias.p	/^(5) the Hankel transform for the symmetric square L-function of $GL(2)$ on the Kuznetsov formula (extracted from the Rankinâ€“Selberg method).$/;"	f
+of	talks_ias.p	/^/;"	f
+of	talks_ias.p	/^Chaim Even”ŒlastName”ŒZohar”Œabstract”XŸ/;"	f
+of	talks_ias.p	/^Yacine Ali”ŒlastName”ŒHaimoud”Œabstract”Xñ/;"	f
+of	talks_ias.p	/^https:\/\/www.ias.edu\/sns\/~baldauf\/Bias\/program.html”Œworkshop”Nub.€•¬	/;"	f
+of	talks_ias.p	/^https:\/\/www.ias.edu\/sns\/~baldauf\/Bias\/program.html”Œworkshop”Nub.€•´	/;"	f
+of	talks_ias.p	/^https:\/\/www.ias.edu\/sns\/~baldauf\/Bias\/program.html”Œworkshop”Nub.€•¼	/;"	f
+of	talks_ias.p	/^https:\/\/www.ias.edu\/sns\/~baldauf\/Bias\/program.html”Œworkshop”Nub.€•½	/;"	f
+of	talks_ias.p	/^https:\/\/www.ias.edu\/sns\/~baldauf\/Bias\/program.html”Œworkshop”Nub.€•Á	/;"	f
+of	talks_ias.p	/^https:\/\/www.ias.edu\/sns\/~baldauf\/Bias\/program.html”Œworkshop”Nub.€•Â	/;"	f
+of	talks_ias.p	/^https:\/\/www.ias.edu\/sns\/~baldauf\/Bias\/program.html”Œworkshop”Nub.€•Ê	/;"	f
+of	talks_ias.p	/^https:\/\/www.ias.edu\/sns\/~baldauf\/Bias\/program.html”Œworkshop”Nub.€•ï	/;"	f
+of	talks_ias.p	/^https:\/\/www.ias.edu\/sns\/~baldauf\/Bias\/program.html”Œworkshop”Nub.€•ô	/;"	f
+of	talks_msri.p	/^Chatterjee”Œabstract”XT/;"	f
+of	talks_msri.p	/^Grigorchuk”Œabstract”XP/;"	f
+of	talks_msri.p	/^and the L-function of E does not vanish at s = 1, then E has only$/;"	f
 of	talks_simons.p	/^A review and Open questions”Œ	firstName”ŒJacob”ŒlastName”ŒSonnenschein”Œabstract”ŒVThe HISH model has been quite successful in accounting for the spectra and decay width”Œworkshop”ŒbSimons- Summer seminar series: Applications of gauge topology, holography and string models to QCD”ub.€•¹/;"	f
+of	talks_simons.p	/^Alessandro”ŒlastName”Œ	Sfondrini”Œabstract”NŒworkshop”ŒNSimons- Workshop: TT and Other Solvable Deformations of Quantum Field Theories”ub.€•4/;"	f
+of	talks_simons.p	/^Alessandro”ŒlastName”Œ	Sfondrini”Œabstract”XB/;"	f
+of	talks_simons.p	/^Nepomechie”Œabstract”XÔ/;"	f
+on	scraped_backup_02_01/talks_fields.p	/^Kyung Taec”ŒlastName”ŒKim”Œabstract”NŒworkshop”Œ-Fields- Super-Intense Laser-Atom Physics 2018”ub.€• /;"	f
+on	scraped_backup_02_01/talks_simons.p	/^A review and Open questions”Œ	firstName”ŒJacob”ŒlastName”ŒSonnenschein”Œabstract”ŒVThe HISH model has been quite successful in accounting for the spectra and decay width”Œworkshop”ŒbSimons- Summer seminar series: Applications of gauge topology, holography and string models to QCD”ub.€•¹/;"	f
 on	talks_fields.p	/^Kyung Taec”ŒlastName”ŒKim”Œabstract”NŒworkshop”Œ-Fields- Super-Intense Laser-Atom Physics 2018”ub.€• /;"	f
 on	talks_simons.p	/^A review and Open questions”Œ	firstName”ŒJacob”ŒlastName”ŒSonnenschein”Œabstract”ŒVThe HISH model has been quite successful in accounting for the spectra and decay width”Œworkshop”ŒbSimons- Summer seminar series: Applications of gauge topology, holography and string models to QCD”ub.€•¹/;"	f
-one	first_scrapes/talks_mathtube.p	/^reconstruct this function one must use auxiliary information to determine$/;"	f
+outFile	main.py	/^outFile = open("talks_ihes.p", "wb")$/;"	v
+over	scraped_backup_02_01/talks_fields.p	/^Lima-filho”Œabstract”NŒworkshop”ŒnFields- Conference on Geometry, Algebra, Number Theory, and their Information Technology Applications (GANITA)”ub.€•O/;"	f
 over	talks_fields.p	/^Lima-filho”Œabstract”NŒworkshop”ŒnFields- Conference on Geometry, Algebra, Number Theory, and their Information Technology Applications (GANITA)”ub.€•O/;"	f
-overlap	first_scrapes/talks_birs.p	/^”ub.€•S/;"	f
 pickleLoader	scrapers/__init__.py	/^def pickleLoader(pklFile):$/;"	f
-provides	first_scrapes/talks_mathtube.p	/^Climenhaga”Œabstract”Xy/;"	f
+related	scraped_backup_02_01/talks_msri.p	/^We consider a model of matrices with well-known spectrum (deterministic with converging spectral measure, Wigner, Wishart etc.) and add a random perturbation with finite rank and delocalized eigenvectors. We get so called spiked or deformed models which lately received quite a lot of attention. We investigate the asymptotic behavior of their extreme eigenvalues, in particular their fluctuations and large deviations properties.”Œworkshop”Œ?MSRI- Connections for Women: An Introduction to Random Matrices”ub.€•;/;"	f
+related	talks_msri.p	/^We consider a model of matrices with well-known spectrum (deterministic with converging spectral measure, Wigner, Wishart etc.) and add a random perturbation with finite rank and delocalized eigenvectors. We get so called spiked or deformed models which lately received quite a lot of attention. We investigate the asymptotic behavior of their extreme eigenvalues, in particular their fluctuations and large deviations properties.”Œworkshop”Œ?MSRI- Connections for Women: An Introduction to Random Matrices”ub.€•;/;"	f
 removeParentheses	scrapers/__init__.py	/^def removeParentheses(text):$/;"	f
 scrape	scrapers/birs.py	/^def scrape(start_date=date(1980, 1, 1)):$/;"	f
 scrape	scrapers/fields.py	/^def scrape(start_date=date(1980, 1, 1)):$/;"	f
+scrape	scrapers/ias.py	/^def scrape(start_date=date(1980, 1, 1), outfile=None):$/;"	f
+scrape	scrapers/ihes.py	/^def scrape(start_date=date(1980, 1, 1), outfile=None):$/;"	f
 scrape	scrapers/mathtube.py	/^def scrape(start_date=date(1980, 1, 1)):$/;"	f
-scrape	scrapers/msri.py	/^def scrape(start_date=date(1980, 1, 1), outfile=None):$/;"	f
+scrape	scrapers/msri.py	/^def scrape(start_date=date(2005, 1, 1), outfile=None):$/;"	f
 scrape	scrapers/simons.py	/^def scrape(start_date=date(1980, 1, 1), outfile=None):$/;"	f
-to	first_scrapes/talks_birs.p	/^”ub.€•]/;"	p
+space.	scraped_backup_02_01/talks_msri.p	/^Wickelgren”Œabstract”Xé/;"	f
+space.	talks_msri.p	/^Wickelgren”Œabstract”Xé/;"	f
+spread	scraped_backup_02_01/talks_simons.p	/^Subtitle: (from J-L Lagrange to Figure Eight by Moore and Ter-Martirosyan,  then and today)”Œ	firstName”Œ	Alexander”ŒlastName”ŒTurbiner”Œabstract”ŒƒThe potential of  the $n$-body problem, both classical and quantum, depends only on the relative (mutual) distances between bodies.”Œworkshop”ŒSimons- SCGP Weekly Talk”ub.€•ó/;"	f
+spread	talks_simons.p	/^Subtitle: (from J-L Lagrange to Figure Eight by Moore and Ter-Martirosyan,  then and today)”Œ	firstName”Œ	Alexander”ŒlastName”ŒTurbiner”Œabstract”ŒƒThe potential of  the $n$-body problem, both classical and quantum, depends only on the relative (mutual) distances between bodies.”Œworkshop”ŒSimons- SCGP Weekly Talk”ub.€•ó/;"	f
+that	scraped_backup_02_01/talks_simons.p	/^/;"	f
+that	talks_ias.p	/^More videos on https:\/\/www.ias.edu\/video”Œworkshop”Nub.€•#/;"	f
+that	talks_simons.p	/^/;"	f
+theorem	scraped_backup_02_01/talks_simons.p	/^Kronheimer”Œabstract”ŒJThis talk will provide a personal perspective on some of Simon Donaldson's”Œworkshop”Œ'Simons- Workshop: Geometry of Manifolds”ub.€•/;"	f
+theorem	talks_simons.p	/^Kronheimer”Œabstract”ŒJThis talk will provide a personal perspective on some of Simon Donaldson's”Œworkshop”Œ'Simons- Workshop: Geometry of Manifolds”ub.€•/;"	f
+to	scraped_backup_02_01/talks_msri.p	/^- The second lecture will be devoted to the study ofÂ  analytic and geometric properties of suchÂ  spaces, in particular I will present the proof of the Levy-Gromov isoperimetric inequalityÂ  (joint work with Fabio Cavalletti).”Œworkshop”Œ7MSRI- Introductory Workshop: Modern Riemannian Geometry”ub.€•V/;"	p
+to	talks_ias.p	/^Grounded Simulation Learning has led to the fastest known stable walk on a widely used humanoid robot, and imitation learning from observation opens the possibility of robots learning from the vast trove of videos available online.”Œworkshop”Nub.€•G/;"	f
+to	talks_ias.p	/^In my talk I am are going to discuss Guth's theorem and an ongoing joint project towards resolution of Guth's problem.”Œworkshop”Nub.€•É/;"	f
+to	talks_ias.p	/^These results are mostly based on joint work with Hemanta Maji and Mike Rosulek; if time permits I will mention on going works that also involve Mohammad Mahmoody-Ghidary, Pichayoot Ouppaphan, Vinod Prabhakaran and Amit Sahai.”Œworkshop”Nub.€•á/;"	p
+to	talks_ias.p	/^https:\/\/www.ias.edu\/sns\/astrophysics\/joint-iaspu-astrophysics-colloquium”Œworkshop”Nub.€•ß	/;"	f
+to	talks_msri.p	/^- The second lecture will be devoted to the study ofÂ  analytic and geometric properties of suchÂ  spaces, in particular I will present the proof of the Levy-Gromov isoperimetric inequalityÂ  (joint work with Fabio Cavalletti).”Œworkshop”Œ7MSRI- Introductory Workshop: Modern Riemannian Geometry”ub.€•V/;"	p
+urlToMaybeAbstract	scrapers/ias.py	/^def urlToMaybeAbstract(url):$/;"	f
 urlToMaybeAbstract	scrapers/msri.py	/^def urlToMaybeAbstract(url):$/;"	f
 urlToMaybeAbstract	scrapers/simons.py	/^def urlToMaybeAbstract(url):$/;"	f
 urlToTalk	scrapers/mathtube.py	/^def urlToTalk(url):$/;"	f
+using	talks_ias.p	/^Joint with: Pim de Haan and Taco Cohen (Natural Graph Networks) Pim de Haan, Maurice Weiler and Taco Cohen (Mesh-CNNs) Fabian Fuchs and Daniel Worrall (SE(3)-Transformers)”Œworkshop”Nub.€•Ë/;"	f
+valued	scraped_backup_02_01/talks_msri.p	/^Alessandra”ŒlastName”Œ	Angelucci”Œabstract”NŒworkshop”Œ"MSRI- Theory of Neural Computation”ub.€•ù/;"	f
+valued	talks_msri.p	/^Alessandra”ŒlastName”Œ	Angelucci”Œabstract”NŒworkshop”Œ"MSRI- Theory of Neural Computation”ub.€•ù/;"	f
+w	talks_ias.p	/^Persi Diaconis pointed out that the space of all possible configurations of n discs of radius r in a unit box is also endowed with a natural topology, and suggests several interesting questions. For a fixed n, how small must r be for the configuration space to be connected? How large can the Betti numbers be? I will discuss recent progress on this and related problems.”Œworkshop”Nub.€•g/;"	f
+which	talks_ias.p	/^https:\/\/www.ias.edu\/sns\/quantum-information-workshop-2018”Œworkshop”Nub.€•/;"	f
+while	talks_ias.p	/^	Additionally, we show that, up to constant factors, our estimators are optimal, improving significantly upon the prior lower-bounds. The analysis of our matching lower bounds makes crucial use of two new multivariate central limit theorems that appear quite natural and general. The first is proven directly via Stein's method; the second is proven in terms of the first using a recent generalization of Newton's inequalities. The talk will include a high level overview of these techniques, and their application both in our context and more generally.”Œworkshop”Nub.€•Ò/;"	f
+with	scraped_backup_02_01/talks_msri.p	/^It is thus a form of generating function, with fudge factors inserted to make our work easier.$/;"	f
+with	talks_ias.p	/^	We also study new models for PAC learning the class of DNF formulas. We consider a type of natural Boolean pairwise query that asks whether a pair of positive examples from a polynomial-sized sample satisfy at least one term in common in the target DNF, as well as numerical queries that ask how many terms in common the two examples satisfy. We begin with a somewhat surprising negative result: that learning general DNF formulas under arbitrary distributions from the above Boolean queries is as hard as PAC-learning DNF formulas without them. However, on the positive side we show general DNF can be learned from numerical queries over the uniform distribution, and give positive results for a number of other natural DNF classes. In the process, we give an algorithm for learning a sum of monotone terms from labeled data only.”Œworkshop”Nub.€•/;"	f
+with	talks_msri.p	/^It is thus a form of generating function, with fudge factors inserted to make our work easier.$/;"	f
+youtubeTitleToMaybeSpeakerAndTitle	scrapers/ihes.py	/^def youtubeTitleToMaybeSpeakerAndTitle(ytTitle):$/;"	f

@@ -3,9 +3,9 @@ from scrapers import mathtube
 from scrapers import fields
 from scrapers import ias
 from scrapers import birs
-from scrapers import pims
 from scrapers import pirsa
 from scrapers import simons
+from scrapers import ihes
 from scrapers import msri
 from scrapers import Talk
 from scrapers import dateParse
@@ -14,16 +14,11 @@ from scrapers import cleanSpeaker
 from scrapers import pickleLoader
 
 
-print(
-    msri.urlToMaybeAbstract(
-        'https://www.msri.org/summer_schools/791/schedules/22413'))
-
 # for talk in simons.scrape(date(2021, 1, 1)):
 # print(talk)
 
-
-# outFile = open("talks_simons.p", "wb")
-# simons.scrape(outfile=outFile)
+outFile = open("talks_ihes.p", "wb")
+ihes.scrape(outfile=outFile)
 
 # outFile.close()
 
