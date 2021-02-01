@@ -24,8 +24,8 @@ def scrape(start_date=date(1980, 1, 1)):
                 break
             for workshop_div in workshop_divs:
                 try:
-                    workshop = workshop_div.find(
-                        'div', class_='event-title').text
+                    workshop = "Birs- " + workshop_div.find(
+                        'div', class_='event-title').text.strip()
                     video_divs = workshop_div.find_all('div', class_='video')
                     for video_div in video_divs:
                         try:

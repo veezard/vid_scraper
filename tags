@@ -4,31 +4,45 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Fields	talks_birs.p	/^Pourahmadi”Œabstract”NŒworkshop”ŒBirs- 14w5157: Recent Advances and Trends in Time Series Analysis: Nonlinear Time Series, High Dimensional Inference and Beyond”ub.€•/;"	f
+Forms	talks_fields.p	/^Parnaudeau”Œabstract”NŒworkshop”ŒWFields- Workshop on Computation of Quantum Systems in Cold-matter Physics and Chemistry”ub.€•*/;"	f
 Talk	scrapers/__init__.py	/^class Talk:$/;"	c
+Theorems	talks_birs.p	/^Daniilidis”Œabstract”NŒworkshop”ŒMBirs- 17w5030: Splitting Algorithms, Modern Operator Theory, and Applications”ub.€•T/;"	f
 __init__	scrapers/__init__.py	/^    def __init__($/;"	m	class:Talk
 __str__	scrapers/__init__.py	/^    def __str__(self):$/;"	m	class:Talk	file:
 and	first_scrapes/talks_mathtube.p	/^Chandgotia”Œabstract”Xá/;"	f
 and	first_scrapes/talks_mathtube.p	/^Kamgarpour”Œabstract”X«/;"	f
+and	talks_birs.p	/^Koditschek”Œabstract”NŒworkshop”ŒBBirs- 20w5194: Topological Complexity and Motion Planning (Online)”ub.€•W/;"	f
 and	talks_mathtube.p	/^Chandgotia”Œabstract”Xá/;"	f
-and	talks_mathtube.p	/^Kamgarpour”Œabstract”X«/;"	f
+at	talks_mathtube.p	/^This is the second lecture in a two part series: part 1”Œworkshop”Œ)Mathtube- Workshop on Arithmetic Topology”ub.€•»/;"	f
 cleanSpeaker	scrapers/__init__.py	/^def cleanSpeaker(speaker):$/;"	f
+cutStringUntilSequence	scrapers/msri.py	/^def cutStringUntilSequence(string, sequences):$/;"	f
 dateParse	scrapers/__init__.py	/^def dateParse(date):$/;"	f
 fields	first_scrapes/talks_birs.p	/^”ub.€•|/;"	f
-fields	talks_birs.p	/^”ub.€•|/;"	f
 for	first_scrapes/talks_birs.p	/^”ub.€•Œ/;"	p
-for	talks_birs.p	/^”ub.€•Œ/;"	p
+for	talks_birs.p	/^Dumitrescu”Œabstract”NŒworkshop”ŒDBirs- 18w5084: Moduli Spaces: Birational Geometry and Wall Crossings”ub.€•\//;"	f
+for	talks_birs.p	/^Wickelgren”Œabstract”NŒworkshop”Œ+Birs- 17w5112: Nilpotent Fundamental Groups”ub.€•\//;"	f
+for	talks_fields.p	/^/;"	f
+for	talks_mathtube.p	/^A case study illustrates the importance of including inhibition on the regions of stability. Implications for optimizing biogas production are then explored. In particular, which control parameters and changes in initial conditions the model predicts can move the system to, or from, the optimal state are then considered. An even more simplified model proposed in Bornh\\â€{o}ft, Hanke-Rauschenback, and Sundmacher [Nonlinear Dynamics 73, 535-549 (2013)], claimed to capture most of the qualitative dynamics of the process is then analyzed. The proof requires considering growth in the chemostat in the case of a general class of response functions including non-monotone functions when the species death rate is included.”Œworkshop”Œ.Mathtube- PIMS-UManitoba Distinguished Lecture”ub.€•#/;"	f
+fullName	scrapers/__init__.py	/^    def fullName(self):$/;"	m	class:Talk
 getTalk	scrapers/fields.py	/^def getTalk(driver):$/;"	f
+in	talks_simons.p	/^Dumitrescu”Œabstract”Xo/;"	f
+of	talks_fields.p	/^/;"	f
+of	talks_simons.p	/^A review and Open questions”Œ	firstName”ŒJacob”ŒlastName”ŒSonnenschein”Œabstract”ŒVThe HISH model has been quite successful in accounting for the spectra and decay width”Œworkshop”ŒbSimons- Summer seminar series: Applications of gauge topology, holography and string models to QCD”ub.€•¹/;"	f
+on	talks_fields.p	/^Kyung Taec”ŒlastName”ŒKim”Œabstract”NŒworkshop”Œ-Fields- Super-Intense Laser-Atom Physics 2018”ub.€• /;"	f
+on	talks_simons.p	/^A review and Open questions”Œ	firstName”ŒJacob”ŒlastName”ŒSonnenschein”Œabstract”ŒVThe HISH model has been quite successful in accounting for the spectra and decay width”Œworkshop”ŒbSimons- Summer seminar series: Applications of gauge topology, holography and string models to QCD”ub.€•¹/;"	f
 one	first_scrapes/talks_mathtube.p	/^reconstruct this function one must use auxiliary information to determine$/;"	f
-one	talks_mathtube.p	/^reconstruct this function one must use auxiliary information to determine$/;"	f
-outFile	main.py	/^outFile = open("talks_fields.p", "wb")$/;"	v
+over	talks_fields.p	/^Lima-filho”Œabstract”NŒworkshop”ŒnFields- Conference on Geometry, Algebra, Number Theory, and their Information Technology Applications (GANITA)”ub.€•O/;"	f
 overlap	first_scrapes/talks_birs.p	/^”ub.€•S/;"	f
-overlap	talks_birs.p	/^”ub.€•S/;"	f
+pickleLoader	scrapers/__init__.py	/^def pickleLoader(pklFile):$/;"	f
 provides	first_scrapes/talks_mathtube.p	/^Climenhaga”Œabstract”Xy/;"	f
-provides	talks_mathtube.p	/^Climenhaga”Œabstract”Xy/;"	f
 removeParentheses	scrapers/__init__.py	/^def removeParentheses(text):$/;"	f
 scrape	scrapers/birs.py	/^def scrape(start_date=date(1980, 1, 1)):$/;"	f
 scrape	scrapers/fields.py	/^def scrape(start_date=date(1980, 1, 1)):$/;"	f
 scrape	scrapers/mathtube.py	/^def scrape(start_date=date(1980, 1, 1)):$/;"	f
+scrape	scrapers/msri.py	/^def scrape(start_date=date(1980, 1, 1), outfile=None):$/;"	f
+scrape	scrapers/simons.py	/^def scrape(start_date=date(1980, 1, 1), outfile=None):$/;"	f
 to	first_scrapes/talks_birs.p	/^”ub.€•]/;"	p
-to	talks_birs.p	/^”ub.€•]/;"	p
+urlToMaybeAbstract	scrapers/msri.py	/^def urlToMaybeAbstract(url):$/;"	f
+urlToMaybeAbstract	scrapers/simons.py	/^def urlToMaybeAbstract(url):$/;"	f
 urlToTalk	scrapers/mathtube.py	/^def urlToTalk(url):$/;"	f

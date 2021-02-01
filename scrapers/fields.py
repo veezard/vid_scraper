@@ -79,7 +79,7 @@ def getTalk(driver):
         pass
     try:
         workshop = driver.find_element_by_class_name("event").text
-        talk.workshop = workshop
+        talk.workshop = "Fields- " + workshop
 
     except BaseException:
         pass

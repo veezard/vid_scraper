@@ -65,7 +65,7 @@ def urlToTalk(url):
             pass
 
         try:
-            talk.workshop = soup.find(
+            talk.workshop = "Mathtube- " + soup.find(
                 'span', class_='views-field views-field-field-conference').find(
                 'span', class_='field-content').text
         except BaseException:

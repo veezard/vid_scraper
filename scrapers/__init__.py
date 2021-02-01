@@ -1,5 +1,6 @@
 from datetime import date
 from dateutil.parser import parse as dateParser_
+import pickle
 import re
 
 
@@ -35,6 +36,14 @@ class Talk:
         output = output + "\n"
         return output
 
+    def fullName(self):
+        fullName = ""
+        if self.firstName:
+            fullName = fullName + self.firstName + " "
+        if self.lastName:
+            fullName = fullName + self.lastName
+        return fullName.strip()
+
 
 def dateParse(date):
     """ string -> date
@@ -48,13 +57,21 @@ def removeParentheses(text):
 
 def cleanSpeaker(speaker):
     speaker = removeParentheses(speaker)
-    speaker = speaker.split(',')[0]
-    words = [word for word in speaker.split(
-        ' ')]
+    speaker = re.split(r',| and| AND| And|;|:', speaker)[0]
+    words = [word.strip() for word in speaker.split(
+        ' ') if word != '']
     word_num = len(words)
     if word_num == 0:
         return (None, None)
     elif word_num == 1:
         return (None, words[0])
     else:
-        return (" ".join(words[0:-1]), words[word_num - 1])
+        return (" ".join(words[0:-1]), words[word_num - 1].capitalize())
+
+
+def pickleLoader(pklFile):
+    try:
+        while True:
+            yield pickle.load(pklFile)
+    except EOFError:
+        pass
