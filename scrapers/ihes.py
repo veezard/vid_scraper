@@ -25,8 +25,9 @@ def scrape(start_date=date(1980, 1, 1), outfile=None):
 
     try:
         driver.get(URL)
-        time.sleep(60)  # during this minute, I manually scroll to the bottom
+        # time.sleep(60)  # during this minute, I manually scroll to the bottom
         # of the page
+        time.sleep(4)
 
         contentsDiv = driver.find_elements_by_id('contents')[1]
         contentsHTML = contentsDiv.get_attribute('outerHTML')
@@ -36,12 +37,16 @@ def scrape(start_date=date(1980, 1, 1), outfile=None):
         for videoDiv in videoDivs:
             infoDiv = videoDiv.find('a', id="video-title")
             link = hostname + infoDiv['href']
+
             youtubeTitle = infoDiv['title']
-            label = infoDiv['aria-label']  # Can use label to determine date
 
             if speakerAndTitle := youtubeTitleToMaybeSpeakerAndTitle(
                     youtubeTitle):
                 talk = Talk(link)
+                date = urlToMaybeDate(link, driver)
+                if date:
+                    if date < start_date:
+                        break
                 talk.firstName, talk.lastName = cleanSpeaker(
                     speakerAndTitle
                     [0])
@@ -67,3 +72,14 @@ def youtubeTitleToMaybeSpeakerAndTitle(ytTitle):
         return None
 
     return (name, title)
+
+
+def urlToMaybeDate(url, driver):
+    try:
+        driver.get(url)
+        time.sleep(3)
+        date = driver.find_element_by_id('date').text[1:]
+        date = dateParse(date)
+        return date
+    except BaseException:
+        return None

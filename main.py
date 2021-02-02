@@ -3,7 +3,6 @@ from scrapers import mathtube
 from scrapers import fields
 from scrapers import ias
 from scrapers import birs
-from scrapers import pirsa
 from scrapers import simons
 from scrapers import ihes
 from scrapers import msri
@@ -17,8 +16,7 @@ from scrapers import pickleLoader
 # for talk in simons.scrape(date(2021, 1, 1)):
 # print(talk)
 
-outFile = open("talks_ihes.p", "wb")
-ihes.scrape(outfile=outFile)
+# ihes.scrape()
 
 # outFile.close()
 
