@@ -10,8 +10,7 @@ from scrapers import cleanSpeaker
 import pickle
 
 
-def scrape(start_date=date(1980, 1, 1), outfile=None):
-    talks = []
+def scrape(start_date=date(1980, 1, 1), process=None):  # process should be Talk -> None
     page_number = 1
     hostname = "http://scgp.stonybrook.edu"
     while page_number >= 0:
@@ -97,14 +96,13 @@ def scrape(start_date=date(1980, 1, 1), outfile=None):
                 if (abstract := urlToMaybeAbstract(link)):
                     talk.abstract = abstract
 
-                talks.append(talk)
+                if process:
+                    process(talk)
                 print(talk)
-                if outfile:
-                    pickle.dump(talk, outfile)
 
         except BaseException:
             pass
-    return talks
+    return None
 
 
 def urlToMaybeAbstract(url):

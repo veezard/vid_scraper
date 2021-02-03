@@ -9,11 +9,10 @@ from scrapers import cleanSpeaker
 from datetime import datetime
 
 
-def scrape(start_date=date(1980, 1, 1)):
+def scrape(start_date=date(1980, 1, 1), process=None):  # process should be Talk -> None
 
     year = datetime.today().year
     hostname = "http://www.birs.ca"
-    talks = []
     while year < 3000:
         URL = "http://www.birs.ca/videos/" + str(year)
         try:
@@ -58,8 +57,9 @@ def scrape(start_date=date(1980, 1, 1)):
                                 'div', class_="talk-title").text
                         except BaseException:
                             pass
-                        talks.append(talk)
                         print(talk)
+                        if process:
+                            process(talk)
 
                 except BaseException:
                     pass
@@ -67,4 +67,4 @@ def scrape(start_date=date(1980, 1, 1)):
             pass
         year = year - 1
 
-    return talks
+    return None

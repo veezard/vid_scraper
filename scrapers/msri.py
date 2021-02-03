@@ -11,8 +11,7 @@ from scrapers import cleanSpeaker
 import pickle
 
 
-def scrape(start_date=date(2005, 1, 1), outfile=None):
-    talks = []
+def scrape(start_date=date(1980, 1, 1), process=None):  # process should be Talk -> None
     hostname = "https://www.msri.org"
     URL = "https://www.msri.org/events/semester?from=2021-01-01&to=2021-05-31"
     page = requests.get(URL)
@@ -35,7 +34,6 @@ def scrape(start_date=date(2005, 1, 1), outfile=None):
                 cutStringUntilSequence(
                     workshopLi.find('time').text,
                     ["(", "-"]))
-            print(date)
             if date < start_date:
                 break
             workshop = "MSRI- " + workshopLi.find('a').text
@@ -61,14 +59,13 @@ def scrape(start_date=date(2005, 1, 1), outfile=None):
                         pass
                     if talk.firstName is None and talk.lastName is None:
                         break
-                    talks.append(talk)
+                    if process:
+                        process(talk)
                     print(talk)
-                    if outfile:
-                        pickle.dump(talk, outfile)
                 except BaseException:
                     pass
 
-    return talks
+    return None
 
 
 def urlToMaybeAbstract(url):

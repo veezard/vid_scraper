@@ -16,11 +16,12 @@ from bs4 import BeautifulSoup
 from selenium.webdriver.common.keys import Keys
 
 
-def scrape(start_date=date(1980, 1, 1), outfile=None):
-    talks = []
+def scrape(start_date=date(1980, 1, 1), process=None):  # process should be Talk -> None
     hostname = "https://www.youtube.com"
-    driver = webdriver.Firefox()
-    delay = 10
+    fireFoxOptions = webdriver.FirefoxOptions()
+    fireFoxOptions.set_headless()
+    driver = webdriver.Firefox(firefox_options=fireFoxOptions)
+    # driver = webdriver.Firefox()
     URL = "https://www.youtube.com/c/IhesFr/videos?view=0&sort=dd&flow=grid"
 
     try:
@@ -28,6 +29,11 @@ def scrape(start_date=date(1980, 1, 1), outfile=None):
         # time.sleep(60)  # during this minute, I manually scroll to the bottom
         # of the page
         time.sleep(4)
+        html = driver.find_element_by_tag_name('html')
+        html.send_keys(Keys.END)
+        time.sleep(2)
+        html.send_keys(Keys.END)
+        time.sleep(2)
 
         contentsDiv = driver.find_elements_by_id('contents')[1]
         contentsHTML = contentsDiv.get_attribute('outerHTML')
@@ -51,15 +57,14 @@ def scrape(start_date=date(1980, 1, 1), outfile=None):
                     speakerAndTitle
                     [0])
                 talk.title = speakerAndTitle[1]
-                talks.append(talk)
                 print(talk)
-                if outfile:
-                    pickle.dump(talk, outfile)
+                if process:
+                    process(talk)
 
     except BaseException:
         pass
 
-    return talks
+    return None
 
 
 def youtubeTitleToMaybeSpeakerAndTitle(ytTitle):

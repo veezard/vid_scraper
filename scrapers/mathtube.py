@@ -8,9 +8,7 @@ from scrapers import removeParentheses
 from scrapers import cleanSpeaker
 
 
-def scrape(start_date=date(1980, 1, 1)):
-
-    talks = []
+def scrape(start_date=date(1980, 1, 1), process=None):  # process should be Talk -> None
     page_number = 0
     while page_number >= 0:
         URL = 'https://mathtube.org/videotype?page=' + str(page_number)
@@ -39,11 +37,13 @@ def scrape(start_date=date(1980, 1, 1)):
                 link = "https://mathtube.org" + talk_tr.find(
                     'td', class_='views-field views-field-title').find('a')['href']
                 if (talk := urlToTalk(link)):
-                    talks.append(talk)
+                    if process:
+                        process(talk)
+                    print(talk)
         except BaseException:
             break
 
-    return talks
+    return None
 
 
 def urlToTalk(url):
@@ -77,7 +77,6 @@ def urlToTalk(url):
         except BaseException:
             pass
 
-        print(talk)
         return(talk)
 
     except BaseException:

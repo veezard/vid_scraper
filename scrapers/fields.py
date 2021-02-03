@@ -11,12 +11,14 @@ from datetime import datetime
 from selenium import webdriver
 
 
-def scrape(start_date=date(1980, 1, 1)):
+def scrape(start_date=date(1980, 1, 1), process=None):  # process should be Talk -> None
 
     year = datetime.today().year
     month = datetime.today().month
-    talks = []
-    driver = webdriver.Firefox()
+    fireFoxOptions = webdriver.FirefoxOptions()
+    fireFoxOptions.set_headless()
+    driver = webdriver.Firefox(firefox_options=fireFoxOptions)
+    # driver = webdriver.Firefox()
     delay = 10
     while year < 3000:
         URL = "https://video-archive.fields.utoronto.ca/browse/" + \
@@ -31,13 +33,17 @@ def scrape(start_date=date(1980, 1, 1)):
             if len(watch_buttons) == 0:
                 year = 4000
                 break
-            for i in range(len(watch_buttons)):
+            for i in reversed(range(len(watch_buttons))):
                 watch_buttons[i].click()
                 time.sleep(3)
-                talks.append(getTalk(driver))
+                talk = getTalk(driver)
+                if process:
+                    process(talk)
+                print(talk)
                 try:
-                    date = dateParse(
-                        driver.find_element_by_class_name("date-time").text)
+                    date = driver.find_element_by_class_name(
+                        "date-time").text[0:-2]
+                    date = dateParse(date)
                     if date < start_date:
                         year = 3010
                         break
@@ -55,12 +61,11 @@ def scrape(start_date=date(1980, 1, 1)):
         else:
             month = 12
             year = year - 1
-    return talks
+    return None
 
 
 def getTalk(driver):
     talk = Talk(driver.current_url)
-    print(talk)
     try:
         driver.find_element_by_class_name("navbar-burger").click()
         time.sleep(1)
@@ -83,5 +88,4 @@ def getTalk(driver):
 
     except BaseException:
         pass
-    print(talk)
     return talk

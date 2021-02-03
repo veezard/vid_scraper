@@ -1,4 +1,4 @@
-from datetime import date
+from datetime import date, timedelta
 from scrapers import mathtube
 from scrapers import fields
 from scrapers import ias
@@ -11,34 +11,51 @@ from scrapers import dateParse
 import pickle
 from scrapers import cleanSpeaker
 from scrapers import pickleLoader
+from db import prepareSession
+from db import addTalk
+import argparse
 
 
-# for talk in simons.scrape(date(2021, 1, 1)):
-# print(talk)
+def main(start_date, dbFile):
+    if start_date:
+        start_date = dateParse(start_date)
+    else:
+        with open('last_scan', 'r') as dateFile:
+            start_date = dateParse(dateFile.read())
 
-# ihes.scrape()
+    if dbFile:
+        session = prepareSession(dbFile)
+    else:
+        session = prepareSession()
 
-# outFile.close()
+    scrapers = [
+        birs.scrape,
+        fields.scrape,
+        ias.scrape,
+        ihes.scrape,
+        mathtube.scrape,
+        msri.scrape,
+        simons.scrape]
 
-# fields.scrape(start_date=date(2021, 1, 1))
-# infileName = "talks_fields_orig.p"
-# outfileName = "talks_fields.p"
-# outfile = open(outfileName, "wb")
+    for scraper in scrapers:
+        scraper(
+            start_date=start_date,
+            process=(
+                lambda talk: addTalk(
+                    talk,
+                    session)))
 
-# with open(infileName, "rb") as infile:
-# for talk in pickleLoader(infile):
-# if talk.workshop:
-# talk.workshop = "Fields- " + talk.workshop.strip()
-# pickle.dump(talk, outfile)
-# print(talk)
-
-# with open(infileName, "rb") as infile:
-# for talk in pickleLoader(infile);
-# talk.firstName, talk.lastName = cleanSpeaker(talk.fullName())
-# pickle.dump(talk, outfile)
-# print(talk.fullName())
-# print(talk.firstName)
-# print(talk.lastName)
+    with open('last_scan', 'w') as dateFile:
+        dateFile.write(str(date.today() - timedelta(weeks=1)))
 
 
-# outfile.close()
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        '--db',
+        help='Database file. Defaults to videoarxiv.sqlite3')
+    parser.add_argument(
+        '--date',
+        help='The date to start scraping from. If not specified, will use one week from previous scrape.')
+    args = parser.parse_args()
+    main(args.date, args.db)
