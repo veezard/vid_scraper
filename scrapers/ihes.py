@@ -64,6 +64,7 @@ def scrape(start_date=date(1980, 1, 1), process=None):  # process should be Talk
     except BaseException:
         pass
 
+    driver.quit()
     return None
 
 

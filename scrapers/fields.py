@@ -61,6 +61,8 @@ def scrape(start_date=date(1980, 1, 1), process=None):  # process should be Talk
         else:
             month = 12
             year = year - 1
+
+    driver.quit()
     return None
 
 

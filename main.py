@@ -14,13 +14,16 @@ from scrapers import pickleLoader
 from db import prepareSession
 from db import addTalk
 import argparse
+import os
 
 
 def main(start_date, dbFile):
+
     if start_date:
         start_date = dateParse(start_date)
     else:
-        with open('last_scan', 'r') as dateFile:
+        scriptDir = os.path.dirname(__file__)
+        with open('{}/last_scan'.format(scriptDir), 'r') as dateFile:
             start_date = dateParse(dateFile.read())
 
     if dbFile:
