@@ -19,10 +19,10 @@ import os
 
 def main(start_date, dbFile):
 
+    scriptDir = os.path.dirname(__file__)
     if start_date:
         start_date = dateParse(start_date)
     else:
-        scriptDir = os.path.dirname(__file__)
         with open('{}/last_scan'.format(scriptDir), 'r') as dateFile:
             start_date = dateParse(dateFile.read())
 
@@ -50,6 +50,8 @@ def main(start_date, dbFile):
 
     with open('last_scan', 'w') as dateFile:
         dateFile.write(str(date.today() - timedelta(weeks=1)))
+
+    os.remove('{}/geckdriver.log'.format(scriptDir))
 
 
 if __name__ == "__main__":
