@@ -74,7 +74,7 @@ def youtubeTitleToMaybeSpeakerAndTitle(ytTitle):
         return None
     name = pieces[0]
     title = pieces[1]
-    if len(name.split(' ')) > 4:
+    if len(name.split(' ')) > 3:
         return None
 
     return (name, title)
