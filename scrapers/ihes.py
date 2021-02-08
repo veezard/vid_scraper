@@ -49,10 +49,10 @@ def scrape(start_date=date(1980, 1, 1), process=None):  # process should be Talk
             if speakerAndTitle := youtubeTitleToMaybeSpeakerAndTitle(
                     youtubeTitle):
                 talk = Talk(link)
-                date = urlToMaybeDate(link, driver)
-                if date:
-                    if date < start_date:
-                        break
+                # date = urlToMaybeDate(link, driver)
+                # if date:
+                # if date < start_date:
+                # break
                 talk.firstName, talk.lastName = cleanSpeaker(
                     speakerAndTitle
                     [0])
