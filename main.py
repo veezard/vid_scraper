@@ -13,44 +13,46 @@ from scrapers import cleanSpeaker
 from scrapers import pickleLoader
 from db import prepareSession
 from db import addTalk
+from pyvirtualdisplay import Display
 import argparse
 import os
 
 
 def main(start_date, dbFile):
 
-    scriptDir = os.path.dirname(__file__)
+    scriptDir = os.path.dirname(os.path.realpath(__file__))
     os.chdir(scriptDir)
-    if start_date:
-        start_date = dateParse(start_date)
-    else:
-        with open('last_scan'.format(scriptDir), 'r') as dateFile:
-            start_date = dateParse(dateFile.read())
+    with Display(visible=False, size=(1200, 1500)):
+        if start_date:
+            start_date = dateParse(start_date)
+        else:
+            with open('last_scan'.format(scriptDir), 'r') as dateFile:
+                start_date = dateParse(dateFile.read())
 
-    if dbFile:
-        session = prepareSession(dbFile)
-    else:
-        session = prepareSession()
+        if dbFile:
+            session = prepareSession(dbFile)
+        else:
+            session = prepareSession()
 
-    scrapers = [
-        birs.scrape,
-        fields.scrape,
-        ias.scrape,
-        ihes.scrape,
-        mathtube.scrape,
-        msri.scrape,
-        simons.scrape]
+        scrapers = [
+            # birs.scrape,
+            fields.scrape,
+            # ias.scrape,
+            # ihes.scrape,
+            # mathtube.scrape,
+            # msri.scrape,
+            simons.scrape]
 
-    for scraper in scrapers:
-        scraper(
-            start_date=start_date,
-            process=(
-                lambda talk: addTalk(
-                    talk,
-                    session)))
+        for scraper in scrapers:
+            scraper(
+                start_date=start_date,
+                process=(
+                    lambda talk: addTalk(
+                        talk,
+                        session)))
 
-    with open('last_scan', 'w') as dateFile:
-        dateFile.write(str(date.today() - timedelta(weeks=1)))
+        with open('last_scan', 'w') as dateFile:
+            dateFile.write(str(date.today() - timedelta(weeks=1)))
 
 
 if __name__ == "__main__":
