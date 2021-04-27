@@ -21,7 +21,7 @@ def scrape(start_date=date(1980, 1, 1), process=None):  # process should be Talk
         soup = BeautifulSoup(page.content, 'html.parser')
         try:
             talkDivs = soup.find(
-                'div', class_="views-infinite-scroll-content-wrapper clearfix").find_all(
+                'div', class_="view-content").find_all(
                 'div', recursive=False)
             for talkDiv in talkDivs:
                 try:

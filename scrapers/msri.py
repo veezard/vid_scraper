@@ -58,7 +58,7 @@ def scrape(start_date=date(1980, 1, 1), process=None):  # process should be Talk
                     except BaseException:
                         pass
                     if talk.firstName is None and talk.lastName is None:
-                        break
+                        pass
                     if process:
                         process(talk)
                     print(talk)

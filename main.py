@@ -41,7 +41,8 @@ def main(start_date, dbFile):
             ihes.scrape,
             mathtube.scrape,
             msri.scrape,
-            simons.scrape]
+            simons.scrape
+        ]
 
         for scraper in scrapers:
             scraper(
