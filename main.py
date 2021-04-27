@@ -35,12 +35,12 @@ def main(start_date, dbFile):
             session = prepareSession()
 
         scrapers = [
-            # birs.scrape,
+            birs.scrape,
             fields.scrape,
-            # ias.scrape,
-            # ihes.scrape,
-            # mathtube.scrape,
-            # msri.scrape,
+            ias.scrape,
+            ihes.scrape,
+            mathtube.scrape,
+            msri.scrape,
             simons.scrape]
 
         for scraper in scrapers:
